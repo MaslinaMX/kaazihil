@@ -1,0 +1,86 @@
+// ============================================================
+// TESTIMONIALS SECTION STYLES
+// ============================================================
+
+.testimonial-section {
+  background: #f9f9f9;
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+.testimonial-slider {
+  &.owl-carousel {
+    .owl-item img {
+      width: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .owl-nav button {
+      height: 44px;
+      width: 44px;
+      border: 1px solid #ebebeb;
+      font-size: 24px;
+      color: #707079;
+      background: $hotel-white;
+      line-height: 48px;
+      text-align: center;
+      border-radius: 50%;
+      position: absolute;
+      left: -190px;
+      top: 50%;
+      transform: translateY(-6px);
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        border-color: $hotel-black;
+        color: $hotel-black;
+      }
+
+      &.owl-next {
+        left: auto;
+        right: -190px;
+      }
+    }
+  }
+
+  .ts-item {
+    text-align: center;
+
+    p {
+      font-size: 20px;
+      color: #707079;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+
+    .ti-author {
+      margin-bottom: 60px;
+
+      .rating {
+        display: inline-block;
+        margin-right: 15px;
+
+        i {
+          color: $info;
+          font-size: 16px;
+          margin-right: 2px;
+        }
+      }
+
+      h5 {
+        font-size: 20px;
+        color: $hotel-black;
+        display: inline-block;
+      }
+    }
+
+    img {
+      max-width: 100px;
+      display: inline-block;
+    }
+  }
+}

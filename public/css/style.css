@@ -1,0 +1,41 @@
+/******************************************************************
+  Template Name: Sona
+  Description: Sona Hotel Html Template
+  Author: Colorlib
+  Author URI: https://colorlib.com
+  Version: 1.0
+  Created: Colorlib
+  
+  MAIN STYLESHEET - Imports all modular CSS sections
+  
+  This file serves as the main entry point for all styles.
+  It imports all modular CSS files to maintain proper cascade
+  and organization. Update imported files instead of this one
+  for specific section styling.
+  
+  CSS Structure:
+  1. 01-variables-reset.css - Global variables and resets
+  2. 02-helpers.css - Utility classes and helpers
+  3. 03-header.css - Header and navigation
+  4. 04-hero.css - Hero section
+  5. 05-about-services.css - About and services sections
+  6. 06-rooms-gallery.css - Rooms and gallery sections
+  7. 07-testimonials-blog.css - Testimonials and blog
+  8. 08-comments-contact.css - Comments, reviews and contact
+  9. 09-footer.css - Footer
+  10. 10-responsive.css - Mobile responsive styles
+  
+  Import in order to ensure proper CSS cascade and specificity
+  
+  ******************************************************************/
+
+@import url('01-variables-reset.css');
+@import url('02-helpers.css');
+@import url('03-header.css');
+@import url('04-hero.css');
+@import url('05-about-services.css');
+@import url('06-rooms-gallery.css');
+@import url('07-testimonials-blog.css');
+@import url('08-comments-contact.css');
+@import url('09-footer.css');
+@import url('10-responsive.css');

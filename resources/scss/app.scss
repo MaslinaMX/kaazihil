@@ -1,0 +1,37 @@
+// ============================================================
+// SONA HOTEL - MAIN SCSS FILE
+// ============================================================
+
+// 1. VARIABLES Y CONFIGURACIÓN
+// ============================================================
+@import 'variables';
+
+// 2. BOOTSTRAP Y CORE
+// ============================================================
+@import 'bootstrap/scss/bootstrap';
+
+// 3. GLOBAL STYLES
+// ============================================================
+@import 'typography';
+@import 'layout';
+
+// 4. NAVIGATION & COMPONENTS
+// ============================================================
+@import 'navbar';
+@import 'components';
+
+// 5. SECTIONS & PAGES
+// ============================================================
+@import 'hero';
+@import 'sections/booking-form';
+@import 'sections/services';
+@import 'sections/about';
+@import 'sections/rooms';
+@import 'sections/testimonials';
+@import 'sections/blog';
+@import 'sections/footer';
+@import 'sections/contact';
+
+// 6. UTILITIES
+// ============================================================
+@import 'sections/utilities';

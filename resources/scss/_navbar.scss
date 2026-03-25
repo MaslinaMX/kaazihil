@@ -1,0 +1,247 @@
+// ─── Tokens de navbar ─────────────────────────────────────────────────────────
+$nav-bg:          $hotel-white;
+$nav-border:      rgba($hotel-black, 0.1);
+$brand-color:     $hotel-black;
+$link-color:      rgba($hotel-black, 0.75);
+$link-hover:      $hotel-black;
+$cta-bg:          $hotel-green;
+$cta-bg-hover:    darken($hotel-green, 8%);
+$cta-color:       $hotel-white;
+
+// ─── Medidas ──────────────────────────────────────────────────────────────────
+$nav-height:        68px;
+$nav-height-mobile: 64px;
+$breakpoint-mobile: 900px;
+
+// ─── Header shell ─────────────────────────────────────────────────────────────
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: $nav-bg;
+    border-bottom: 1px solid $nav-border;
+}
+
+// ─── Container ────────────────────────────────────────────────────────────────
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 48px;
+    height: $nav-height;
+}
+
+// ─── Brand ────────────────────────────────────────────────────────────────────
+.navbar__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+// h1 temporal — se reemplazará por <img> con el logo
+.navbar__brand-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $brand-color;
+    letter-spacing: 0.04em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.15;
+}
+
+.navbar__brand-sub {
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: $brand-color;
+    text-transform: uppercase;
+    margin-top: 2px;
+    opacity: 0.7;
+}
+
+// ─── Collapse (desktop) ───────────────────────────────────────────────────────
+.navbar__collapse {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 48px; // aire extra entre logo y links
+}
+
+// ─── Nav list ─────────────────────────────────────────────────────────────────
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2px;
+}
+
+.navbar__link {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: $link-color;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 2px;
+    transition: color 0.15s ease;
+    white-space: nowrap;
+
+    &:hover { color: $link-hover; }
+
+    &--active {
+        color: $brand-color;
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+    }
+}
+
+// ─── CTA button ───────────────────────────────────────────────────────────────
+.navbar__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $cta-color;
+    background-color: $cta-bg;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 3px;
+    margin-left: 16px;
+    white-space: nowrap;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: $cta-bg-hover;
+        color: $cta-color;
+    }
+}
+
+.navbar__cta-arrow {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+// ─── Hamburger ────────────────────────────────────────────────────────────────
+.navbar__toggler {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    flex-shrink: 0;
+
+    span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: $hotel-black;
+        border-radius: 1px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    &[aria-expanded="true"] {
+        span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        span:nth-child(2) { opacity: 0; }
+        span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
+}
+
+// ─── Mobile ───────────────────────────────────────────────────────────────────
+@media (max-width: $breakpoint-mobile) {
+
+    // Flex vertical: logo arriba, acciones abajo centradas
+    .navbar__container {
+        height: auto;
+        padding: 14px 16px 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    // Brand centrado
+    .navbar__brand {
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar__brand-name {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    // Slot mobile: CTA + hamburger centrados en fila
+    .navbar__mobile-actions {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        .navbar__cta {
+            margin-left: 0;
+            padding: 8px 20px;
+            font-size: 0.8rem;
+        }
+    }
+
+    .navbar__toggler {
+        display: flex;
+    }
+
+    // Menú desplegable debajo del header
+    .navbar__collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: $nav-bg;
+        border-bottom: 1px solid $nav-border;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 16px 20px;
+        gap: 0;
+        box-shadow: 0 4px 12px rgba($hotel-black, 0.08);
+
+        &.is-open { display: flex; }
+
+        // CTA desktop oculto en mobile (ya está en mobile-actions)
+        .navbar__cta { display: none; }
+    }
+
+    .navbar__nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .navbar__link {
+        display: block;
+        padding: 11px 4px;
+        font-size: 0.875rem;
+        border-bottom: 1px solid rgba($hotel-black, 0.06);
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// Ocultar el slot mobile en desktop
+.navbar__mobile-actions {
+    display: none;
+}

@@ -1,0 +1,125 @@
+// Estilos de Layout
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $hotel-white;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+// Footer
+footer {
+  background: linear-gradient(135deg, $hotel-black 0%, $hotel-green 100%);
+  color: #fff;
+  padding: 3rem 0 1rem;
+  margin-top: 4rem;
+  border-top: 3px solid $hotel-orange;
+  
+  h5 {
+    color: $hotel-orange;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: 0.5rem;
+      
+      a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: $hotel-orange;
+        }
+      }
+    }
+  }
+  
+  .social-links {
+    a {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: $hotel-orange;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// ─── Language Switcher Footer ─────────────────────────────────────────────────
+.language-switcher-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lang-link-footer {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  padding: 2px 4px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &.active {
+    color: $hotel-orange;
+    font-weight: 600;
+  }
+}
+
+.lang-separator-footer {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+// Contenedor principal
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Secciones
+section {
+  padding: 3rem 0;
+  
+  &:nth-child(even) {
+    background-color: #fff;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  main {
+    padding: 1rem 0;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+  
+  header .navbar-brand {
+    font-size: 1.2rem;
+  }
+}

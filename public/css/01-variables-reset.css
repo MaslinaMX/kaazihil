@@ -1,0 +1,140 @@
+/******************************************************************
+  Template Name: Sona
+  Description: Sona Hotel Html Template
+  Author: Colorlib
+  Author URI: https://colorlib.com
+  Version: 1.0
+  Created: Colorlib
+  
+  CSS Section: Variables, Reset & Base Styles
+  Purpose: Global variables, font definitions, and element resets
+******************************************************************/
+
+/* ============================================
+   1. GLOBAL COLORS & TYPOGRAPHY VARIABLES
+   ============================================ */
+
+:root {
+    --color-primary: #f6a339;
+    --color-primary-dark: #13662e;
+    --color-text: #000000;
+    --color-text-light: #6b6b6b;
+    --color-text-lighter: #707079;
+    --color-text-lightest: #aaaab3;
+    --color-bg-light: #f9f9f9;
+    --color-border: #e5e5e5;
+    --color-border-light: #ebebeb;
+    --color-bg-dark: #333333;
+    --color-white: #ffffff;
+    --color-rating: #f6a339;
+    --color-overlay-dark: rgba(25, 25, 26, 0.3);
+    --color-overlay-light: rgba(0, 0, 0, 0.7);
+
+    --font-serif: 'Lora', serif;
+    --font-sans: 'Cabin', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+/* ============================================
+   2. HTML & BODY DEFAULTS
+   ============================================ */
+
+html,
+body {
+    height: 100%;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================
+   3. TYPOGRAPHY RESETS
+   ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: var(--color-text);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-serif);
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--font-sans);
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-normal);
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ============================================
+   4. FORM ELEMENTS RESET
+   ============================================ */
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* ============================================
+   5. LINK STYLES
+   ============================================ */
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: var(--color-text-lightest);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/* ============================================
+   6. LIST RESETS
+   ============================================ */
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}

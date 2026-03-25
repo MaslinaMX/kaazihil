@@ -1,0 +1,61 @@
+// ============================================================
+// SERVICES SECTION STYLES
+// ============================================================
+
+.services-section {
+  padding-bottom: 60px;
+  border-top: 1px solid #e5e5e5;
+
+  .section-title {
+    margin-bottom: 36px;
+  }
+}
+
+.service-item {
+  text-align: center;
+  padding: 30px 35px 18px;
+  transition: all 0.3s ease;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    display: inline-block;
+    color: $primary;
+    font-size: 48px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+
+  h4 {
+    color: $hotel-black;
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+
+  p {
+    color: #707079;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background: $secondary;
+
+    i {
+      color: $hotel-white;
+      transform: translateY(-5px);
+    }
+
+    h4 {
+      color: $hotel-white;
+    }
+
+    p {
+      color: $hotel-white;
+    }
+  }
+}

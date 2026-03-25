@@ -1,0 +1,31 @@
+// Variables personalizadas del proyecto
+
+// Colores base del hotel
+$hotel-orange: #f6a339;
+$hotel-green: #13662e;
+$hotel-turquoise: #2399a2;
+$hotel-black: #000000;
+$hotel-white: #ffffff;
+
+// Paleta de colores Bootstrap - valores personalizados ANTES de que Bootstrap lo use
+$primary: $hotel-green;
+$secondary: $hotel-orange;
+$success: #28a745;
+$info: $hotel-turquoise;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: $hotel-white;
+$dark: $hotel-black;
+
+// Breakpoints adicionales si es necesario
+$custom-breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+// Espaciado
+$spacer-base: 1rem;

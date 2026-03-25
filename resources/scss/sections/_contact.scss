@@ -1,0 +1,200 @@
+// ============================================================
+// CONTACT SECTION STYLES
+// ============================================================
+
+.breadcrumb-section {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.breadcrumb-text {
+  text-align: center;
+
+  h2 {
+    font-size: 44px;
+    color: $hotel-black;
+    margin-bottom: 12px;
+  }
+
+  .bt-option {
+    a {
+      display: inline-block;
+      font-size: 18px;
+      color: $hotel-black;
+      margin-right: 20px;
+      position: relative;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      &:after {
+        position: absolute;
+        right: -13px;
+        top: 1px;
+        content: "";
+        font-size: 18px;
+        font-family: "FontAwesome";
+        color: #aaaab3;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    span {
+      display: inline-block;
+      font-size: 18px;
+      color: #aaaab3;
+    }
+  }
+}
+
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact-text {
+  h2 {
+    font-size: 44px;
+    color: $hotel-black;
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: #707079;
+    margin-bottom: 25px;
+  }
+
+  table tbody tr td {
+    font-size: 16px;
+    color: $hotel-black;
+    line-height: 36px;
+    font-weight: 500;
+
+    &.c-o {
+      color: #707079;
+      width: 75px;
+    }
+  }
+}
+
+.map {
+  height: 470px;
+  box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+  margin-top: 75px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ============================================================
+// VIDEO SECTION
+// ============================================================
+
+.video-section {
+  height: 500px;
+  padding-top: 140px;
+  background-size: cover;
+  background-position: center;
+
+  .video-text {
+    text-align: center;
+
+    h2 {
+      font-size: 48px;
+      color: $hotel-white;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 20px;
+      color: $hotel-white;
+      margin-bottom: 40px;
+    }
+
+    .play-btn {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      background: $primary;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 80px;
+      color: $hotel-white;
+      font-size: 28px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background: $secondary;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// ============================================================
+// GALLERY SECTION
+// ============================================================
+
+.gallery-section {
+  padding-bottom: 80px;
+
+  .section-title {
+    margin-bottom: 38px;
+  }
+}
+
+.gallery-item {
+  position: relative;
+  height: 279px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+
+    .gi-text {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 25, 26, 0.3);
+    content: "";
+    z-index: -1;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+
+  &.large-item {
+    height: 576px;
+  }
+
+  .gi-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    opacity: 0;
+
+    h3 {
+      color: $hotel-white;
+    }
+  }
+}

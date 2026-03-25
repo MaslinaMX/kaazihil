@@ -1,0 +1,317 @@
+/******************************************************************
+  CSS Section: Testimonials & Blog
+  Purpose: Testimonial slider and blog section styling
+******************************************************************/
+
+/* ============================================
+   TESTIMONIAL SECTION
+   ============================================ */
+
+.testimonial-section {
+    background: var(--color-bg-light);
+}
+
+.testimonial-section .section-title {
+    margin-bottom: 30px;
+}
+
+.testimonial-slider.owl-carousel .owl-item img {
+    width: auto;
+    margin: 0 auto;
+}
+
+.testimonial-slider.owl-carousel .owl-nav button {
+    height: 44px;
+    width: 44px;
+    border: 1px solid var(--color-border-light);
+    font-size: 24px;
+    color: var(--color-text-lighter);
+    background: var(--color-white);
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -190px;
+    top: 50%;
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.testimonial-slider.owl-carousel .owl-nav button:hover {
+    border-color: var(--color-text);
+    color: var(--color-text);
+}
+
+.testimonial-slider.owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -190px;
+}
+
+.testimonial-slider .ts-item {
+    text-align: center;
+}
+
+.testimonial-slider .ts-item p {
+    font-size: 20px;
+    color: var(--color-text-lighter);
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.testimonial-slider .ts-item .ti-author {
+    margin-bottom: 60px;
+}
+
+.testimonial-slider .ts-item .ti-author .rating {
+    display: inline-block;
+}
+
+.testimonial-slider .ts-item .ti-author .rating i {
+    color: var(--color-primary);
+    font-size: 16px;
+}
+
+.testimonial-slider .ts-item .ti-author h5 {
+    font-size: 20px;
+    color: var(--color-text);
+    display: inline-block;
+}
+
+/* ============================================
+   HOME PAGE BLOG SECTION
+   ============================================ */
+
+.blog-section {
+    padding-bottom: 70px;
+}
+
+.blog-section .section-title {
+    margin-bottom: 36px;
+}
+
+/* ============================================
+   BLOG PAGE SECTION
+   ============================================ */
+
+.blog-section.blog-page {
+    padding-top: 0;
+    padding-bottom: 88px;
+}
+
+.blog-item {
+    height: 450px;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.blog-item.small-size {
+    height: 400px;
+}
+
+.blog-item .bi-text {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.blog-item .bi-text .b-tag {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--color-primary);
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.blog-item .bi-text h4 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.blog-item .bi-text h4 a {
+    color: var(--color-white);
+}
+
+.blog-item .bi-text .b-time {
+    font-size: 12px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.load-more {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.load-more .primary-btn {
+    color: var(--color-text);
+}
+
+/* ============================================
+   BLOG DETAILS HERO SECTION
+   ============================================ */
+
+.blog-details-hero {
+    height: 530px;
+    padding-top: 165px;
+}
+
+.bd-hero-text {
+    text-align: center;
+}
+
+.bd-hero-text span {
+    font-size: 12px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 2px;
+}
+
+.bd-hero-text h2 {
+    font-size: 44px;
+    color: var(--color-white);
+    line-height: 54px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.bd-hero-text ul li {
+    list-style: none;
+    font-size: 14px;
+    color: var(--color-primary);
+    margin-right: 35px;
+    display: inline-block;
+}
+
+.bd-hero-text ul li:last-child {
+    margin-right: 0;
+}
+
+.bd-hero-text ul li.b-time {
+    text-transform: uppercase;
+}
+
+/* ============================================
+   BLOG DETAILS SECTION
+   ============================================ */
+
+.blog-details-section {
+    padding-top: 55px;
+}
+
+.blog-details-text .bd-title {
+    margin-bottom: 52px;
+}
+
+.blog-details-text .bd-title p {
+    font-size: 18px;
+    color: var(--color-text-lighter);
+    line-height: 30px;
+}
+
+.blog-details-text .bd-pic {
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.blog-details-text .bd-pic .bp-item {
+    width: calc(33.33% - 10px);
+    float: left;
+    margin-right: 15px;
+}
+
+.blog-details-text .bd-pic .bp-item:last-child {
+    margin-right: 0;
+}
+
+.blog-details-text .bd-pic .bp-item img {
+    min-width: 100%;
+}
+
+.blog-details-text .bd-more-text {
+    margin-bottom: 50px;
+}
+
+.blog-details-text .bd-more-text .bm-item {
+    margin-bottom: 30px;
+}
+
+.blog-details-text .bd-more-text .bm-item h4 {
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.blog-details-text .bd-more-text .bm-item p {
+    font-size: 18px;
+    color: var(--color-text-lighter);
+    line-height: 30px;
+}
+
+/* ============================================
+   BLOG TAGS & SHARING
+   ============================================ */
+
+.blog-details-text .tag-share {
+    overflow: hidden;
+    border-top: 1px solid var(--color-border-light);
+    padding-top: 30px;
+    margin-bottom: 75px;
+}
+
+.blog-details-text .tag-share .tags {
+    float: left;
+}
+
+.blog-details-text .tag-share .tags a {
+    font-size: 12px;
+    color: var(--color-text-lighter);
+    background: var(--color-border-light);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 6px;
+}
+
+.blog-details-text .tag-share .tags a:hover {
+    color: var(--color-white);
+    background: var(--color-primary-dark);
+}
+
+.blog-details-text .tag-share .social-share {
+    float: right;
+}
+
+.blog-details-text .tag-share .social-share span {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--color-text-lighter);
+}
+
+.blog-details-text .tag-share .social-share a {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--color-text-lighter);
+    margin-left: 30px;
+}

@@ -1,0 +1,244 @@
+// Componentes personalizados
+
+// Botones personalizados
+.btn-primary,
+.btn-primary:hover {
+  background-color: $hotel-orange;
+  border-color: $hotel-orange;
+  color: $hotel-white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: darken($hotel-orange, 10%);
+    border-color: darken($hotel-orange, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(246, 163, 57, 0.3);
+  }
+}
+
+.btn-secondary {
+  background-color: $hotel-green;
+  border-color: $hotel-green;
+  color: #fff;
+  font-weight: 600;
+  
+  &:hover {
+    background-color: lighten($hotel-green, 10%);
+    border-color: lighten($hotel-green, 10%);
+  }
+}
+
+.btn-outline-primary {
+  color: $hotel-orange;
+  border-color: $hotel-orange;
+  
+  &:hover {
+    background-color: $hotel-orange;
+    border-color: $hotel-orange;
+    color: $hotel-white;
+  }
+
+
+// Tarjetas
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    background-color: $hotel-orange;
+    border-bottom: none;
+    color: $hotel-white;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+// Formularios
+.form-control,
+.form-select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease;
+  
+  &:focus {
+    border-color: $hotel-orange;
+    box-shadow: 0 0 0 0.2rem rgba(246, 163, 57, 0.25);
+  }
+}
+
+.form-label {
+  color: $hotel-black;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+// Alertas
+.alert {
+  border: none;
+  border-left: 4px solid;
+  border-radius: 4px;
+  
+  &.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: $hotel-turquoise;
+  }
+  
+  &.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #28a745;
+  }
+  
+  &.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffc107;
+  }
+  
+  &.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #dc3545;
+  }
+}
+
+// Galería de habitaciones
+.room-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .room-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, $hotel-orange 0%, $hotel-green 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3rem;
+    position: relative;
+    overflow: hidden;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0);
+      transition: background 0.3s ease;
+    }
+  }
+  
+  &:hover .room-image::after {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .room-details {
+    padding: 1.5rem;
+    
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    
+    .room-price {
+      font-size: 1.5rem;
+      color: $hotel-orange;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .room-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+      
+      li {
+        padding: 0.25rem 0;
+        color: #666;
+        
+        &::before {
+          content: '✓ ';
+          color: $hotel-turquoise;
+          font-weight: bold;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Formulario de reserva
+.reservation-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Hero section
+.hero {
+  background: linear-gradient(135deg, $hotel-black 0%, $hotel-green 100%);
+  color: #fff;
+  padding: 4rem 0;
+  border-bottom: 3px solid $hotel-orange;
+  
+  h1 {
+    color: $hotel-orange;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  
+  p {
+    color: #ccc;
+    font-size: 1.1rem;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .room-image {
+    height: 200px !important;
+  }
+  
+  .hero {
+    padding: 2rem 0;
+  }
+}
+}

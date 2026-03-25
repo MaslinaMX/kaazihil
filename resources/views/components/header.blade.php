@@ -1,0 +1,136 @@
+<!-- Offcanvas Menu Section Begin -->
+<div class="offcanvas-menu-overlay"></div>
+<div class="canvas-open">
+    <i class="icon_menu"></i>
+</div>
+<div class="offcanvas-menu-wrapper">
+    <div class="canvas-close">
+        <i class="icon_close"></i>
+    </div>
+    {{-- <div class="search-icon search-switch">
+        <i class="icon_search"></i>
+    </div> --}}
+    <div class="header-configure-area">
+        <div class="language-option">
+            {{-- <img src="{{ asset('img/flag.jpg') }}"
+                 alt="" /> --}}
+            <h3 style="margin-bottom: 30px">Hotel Kaá Zihil</h3>
+            <span>{{ strtoupper(app()->getLocale()) }} <i class="fa fa-angle-down"></i></span>
+            <div class="flag-dropdown">
+                <ul>
+                    <li><a href="{{ route('locale.switch', 'es') }}">ES</a></li>
+                    <li><a href="{{ route('locale.switch', 'en') }}">EN</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="{{ route('reservations.create') }}"
+           class="bk-btn">Reservar</a>
+    </div>
+    <nav class="mainmenu mobile-menu">
+        <ul>
+            <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
+                <a href="{{ route('home') }}">Inicio</a>
+            </li>
+            <li class="{{ request()->routeIs('rooms.index') ? 'active' : '' }}">
+                <a href="{{ route('rooms.index') }}">Habitaciones</a>
+            </li>
+            <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
+                <a href="{{ route('about') }}">Nosotros</a>
+            </li>
+            <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
+                <a href="{{ route('blog') }}">Blog</a>
+            </li>
+            <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
+                <a href="{{ route('contact') }}">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="mobile-menu-wrap"></div>
+    <div class="top-social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-tripadvisor"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <ul class="top-widget">
+        <li><i class="fa fa-phone"></i><a href="tel:+5219842767319">(+52) 1 984 276 7319</a></li>
+        <li><i class="fa fa-envelope"></i><a href="mailto:hotelkaazihil2026@gmail.com">hotelkaazihil2026@gmail.com</a></li>
+    </ul>
+</div>
+<!-- Offcanvas Menu Section End -->
+
+<!-- Header Section Begin -->
+<header class="header-section">
+    <div class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="tn-left">
+                        <li><i class="fa fa-phone"></i><a href="tel:+5219842767319">(+52) 1 984 276 7319</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:hotelkaazihil2026@gmail.com">hotelkaazihil2026@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tn-right">
+                        <div class="top-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <a href="{{ route('reservations.create') }}"
+                           class="bk-btn">Reservar</a>
+                        <div class="language-option">
+                            <span>{{ strtoupper(app()->getLocale()) }} <i class="fa fa-angle-down"></i></span>
+                            <div class="flag-dropdown">
+                                <ul>
+                                    <li><a href="{{ route('locale.switch', 'es') }}">ES</a></li>
+                                    <li><a href="{{ route('locale.switch', 'en') }}">EN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a href="{{ route('home') }}">
+                            {{-- <img src="{{ asset('img/logo.jpeg') }}"
+                                 alt="Hotel Kaá Zihil" /> --}}
+                            <h3 class="mt-2">Hotel Kaá Zihil</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="nav-menu">
+                        <nav class="mainmenu">
+                            <ul>
+                                <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
+                                    <a href="{{ route('home') }}">Inicio</a>
+                                </li>
+                                <li class="{{ request()->routeIs('rooms.index') ? 'active' : '' }}">
+                                    <a href="{{ route('rooms.index') }}">Habitaciones</a>
+                                </li>
+                                <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
+                                    <a href="{{ route('about') }}">Nosotros</a>
+                                </li>
+                                <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
+                                    <a href="{{ route('blog') }}">Blog</a>
+                                </li>
+                                <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
+                                    <a href="{{ route('contact') }}">Contacto</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->

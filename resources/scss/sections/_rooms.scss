@@ -1,0 +1,267 @@
+// ============================================================
+// HOME ROOMS SECTION STYLES
+// ============================================================
+
+.hp-room-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hp-room-items {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+
+  .hp-room-item {
+    height: 600px;
+    margin-right: -15px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+    &:hover .hr-text {
+      bottom: 135px;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    .hr-text {
+      position: absolute;
+      left: 45px;
+      right: 25px;
+      bottom: -250px;
+      transition: all 0.5s ease;
+
+      h3 {
+        color: $hotel-white;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        color: $primary;
+        font-weight: 700;
+        margin-bottom: 50px;
+        transition: all 0.2s ease;
+
+        span {
+          font-family: "Cabin", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color: $hotel-white;
+        }
+      }
+
+      table {
+        margin-bottom: 30px;
+
+        tbody tr td {
+          font-size: 16px;
+          color: $hotel-white;
+          line-height: 36px;
+
+          &.r-o {
+            width: 120px;
+          }
+        }
+      }
+
+      .primary-btn:after {
+        background: $hotel-white;
+      }
+    }
+  }
+}
+
+// ============================================================
+// ROOMS & ROOM DETAILS SECTION
+// ============================================================
+
+.rooms-section {
+  padding-top: 0;
+  padding-bottom: 80px;
+
+  &.spad {
+    padding-top: 0;
+  }
+}
+
+.room-item {
+  margin-bottom: 30px;
+
+  img {
+    min-width: 100%;
+    display: block;
+  }
+
+  .ri-text {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    padding: 24px 24px 30px 28px;
+
+    h4 {
+      color: $hotel-black;
+      margin-bottom: 17px;
+    }
+
+    h3 {
+      color: $primary;
+      font-weight: 700;
+      margin-bottom: 14px;
+
+      span {
+        font-family: "Cabin", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: $hotel-black;
+      }
+    }
+
+    table {
+      margin-bottom: 18px;
+
+      tbody tr td {
+        font-size: 16px;
+        color: #707079;
+        line-height: 36px;
+
+        &.r-o {
+          width: 125px;
+        }
+      }
+    }
+
+    .primary-btn {
+      color: $hotel-black;
+    }
+  }
+}
+
+.room-pagination {
+  text-align: center;
+  padding-top: 20px;
+
+  a {
+    font-size: 16px;
+    color: #707079;
+    border: 1px solid #EFD4B9;
+    border-radius: 2px;
+    padding: 7px 13px 5px;
+    margin-right: 7px;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: $secondary;
+      color: $hotel-white;
+      border-color: $secondary;
+    }
+  }
+}
+
+// ============================================================
+// ROOM DETAILS SECTION
+// ============================================================
+
+.room-details-section {
+  padding-top: 0;
+  padding-bottom: 80px;
+
+  &.spad {
+    padding-top: 0;
+  }
+}
+
+.room-details-item {
+  margin-bottom: 50px;
+
+  img {
+    margin-bottom: 40px;
+  }
+
+  .rd-text {
+    .rd-title {
+      overflow: hidden;
+      margin-bottom: 8px;
+
+      h3 {
+        color: $hotel-black;
+        float: left;
+      }
+
+      .rdt-right {
+        float: right;
+        text-align: right;
+
+        .rating {
+          display: inline-block;
+          margin-right: 25px;
+          margin-bottom: 10px;
+
+          i {
+            color: $info;
+            margin-right: 2px;
+          }
+        }
+
+        a {
+          display: inline-block;
+          color: $hotel-white;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 700;
+          background: $secondary;
+          padding: 14px 28px 13px;
+          border-radius: 2px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: darken($secondary, 10%);
+          }
+        }
+      }
+    }
+
+    h2 {
+      color: $primary;
+      font-weight: 700;
+      margin-bottom: 25px;
+
+      span {
+        font-family: "Cabin", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: $hotel-black;
+      }
+    }
+
+    table {
+      margin-bottom: 32px;
+
+      tbody tr td {
+        font-size: 16px;
+        color: $hotel-black;
+        line-height: 36px;
+
+        &.r-o {
+          width: 120px;
+          color: #707079;
+        }
+      }
+    }
+
+    p {
+      color: #707079;
+
+      &.f-para {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}

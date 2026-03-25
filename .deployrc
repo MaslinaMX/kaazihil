@@ -1,0 +1,161 @@
+#!/bin/bash
+################################################################################
+#                       KAAZIHIL DEPLOY CONFIGURATION                         #
+#                                                                              #
+# Archivo de configuración para el script .deploy                             #
+# Personaliza estas variables según tu entorno                               #
+################################################################################
+
+# ============================================================================
+# INFORMACIÓN DEL PROYECTO
+# ============================================================================
+
+# Nombre del proyecto
+PROJECT_NAME="Kaazihil Hotel Management"
+
+# Email para notificaciones
+DEPLOY_EMAIL="admin@tudominio.com"
+
+# ============================================================================
+# CONFIGURACIÓN DE ENTORNO
+# ============================================================================
+
+# Ambiente (production, staging, development)
+ENVIRONMENT="production"
+
+# URL del proyecto
+PROJECT_URL="https://tudominio.com"
+
+# ============================================================================
+# OPCIONES DE DEPLOYMENT
+# ============================================================================
+
+# ¿Ejecutar migraciones? (true/false)
+RUN_MIGRATIONS=true
+
+# ¿Ejecutar seeders? (true/false)
+RUN_SEEDERS=false
+
+# ¿Limpiar cachés? (true/false)
+CLEAR_CACHE=true
+
+# ¿Ejecutar optimizaciones? (true/false)
+RUN_OPTIMIZATION=true
+
+# ============================================================================
+# BACKUP
+# ============================================================================
+
+# ¿Crear backup antes del deploy? (true/false)
+CREATE_BACKUP=true
+
+# Número máximo de backups a mantener
+MAX_BACKUPS=10
+
+# ============================================================================
+# BASE DE DATOS
+# ============================================================================
+
+# ¿Respaldar base de datos? (true/false)
+BACKUP_DATABASE=true
+
+# Comando para respaldar (si BACKUP_DATABASE=true)
+# DB_BACKUP_CMD="mysqldump -u $DB_USER -p$DB_PASSWORD $DB_NAME > backups/db-$(date +%Y%m%d_%H%M%S).sql"
+
+# ============================================================================
+# NOTIFICACIONES
+# ============================================================================
+
+# ¿Enviar notificacionesal terminar? (true/false)
+SEND_NOTIFICATIONS=false
+
+# Slack webhook (si uses Slack)
+# SLACK_WEBHOOK="https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+
+# Discord webhook (si uses Discord)
+# DISCORD_WEBHOOK="https://discordapp.com/api/webhooks/YOUR/WEBHOOK"
+
+# ============================================================================
+# PERMISOS
+# ============================================================================
+
+# Usuario web (www-data, nobody, etc)
+WEB_USER="www-data"
+
+# Grupo web
+WEB_GROUP="www-data"
+
+# Permisos de directorios
+DIR_PERMISSIONS="775"
+
+# ============================================================================
+# OPCIONES DE GIT
+# ============================================================================
+
+# ¿Verificar cambios no commiteados? (true/false)
+CHECK_UNCOMMITTED=true
+
+# ¿Auto-stash cambios locales? (true/false)
+AUTO_STASH=true
+
+# Rama por defecto
+DEFAULT_BRANCH="main"
+
+# ============================================================================
+# COMPILACIÓN DE ASSETS
+# ============================================================================
+
+# ¿Compilar assets? (true/false)
+BUILD_ASSETS=true
+
+# Comando de build (npm run build, yarn build, etc)
+BUILD_COMMAND="npm run build"
+
+# ============================================================================
+# LOGGING Y DEBUGGING
+# ============================================================================
+
+# Nivel de verbosidad (quiet, normal, verbose)
+VERBOSITY="normal"
+
+# ¿Guardar logs? (true/false)
+SAVE_LOGS=true
+
+# Directorio de logs
+LOG_DIR="storage/logs"
+
+# ============================================================================
+# HOOKS PERSONALIZADOS
+# ============================================================================
+
+# Script a ejecutar ANTES del deploy
+# PRE_DEPLOY_HOOK="./scripts/pre-deploy.sh"
+
+# Script a ejecutar DESPUÉS del deploy
+# POST_DEPLOY_HOOK="./scripts/post-deploy.sh"
+
+# Script a ejecutar en caso de ERROR
+# ERROR_HOOK="./scripts/error-deploy.sh"
+
+# ============================================================================
+# OPCIONES AVANZADAS
+# ============================================================================
+
+# ¿Ejecutar en modo simulación? (true/false) - NO hace cambios reales
+DRY_RUN=false
+
+# Timeout para comandos (segundos)
+COMMAND_TIMEOUT=600
+
+# ¿Usar colores en salida? (true/false)
+USE_COLORS=true
+
+# ============================================================================
+# INFORMACIÓN DE SALIDA
+# ============================================================================
+
+# ¿Mostrar comandos siendo ejecutados? (true/false)
+SHOW_COMMANDS=false
+
+# ¿Mostrar output de comandos? (true/false)
+SHOW_OUTPUT=false

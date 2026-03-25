@@ -1,0 +1,419 @@
+// ============================================================
+// BLOG SECTION STYLES
+// ============================================================
+
+.blog-section {
+  padding-bottom: 70px;
+
+  &.spad {
+    padding: 100px 0 70px 0;
+  }
+
+  .section-title {
+    margin-bottom: 36px;
+  }
+}
+
+.blog-item {
+  height: 450px;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &.small-size {
+    height: 400px;
+  }
+
+  &:hover {
+    .bi-text {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .bi-text {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    .b-tag {
+      display: inline-block;
+      color: $hotel-white;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: $primary;
+      padding: 3px 10px;
+      border-radius: 2px;
+    }
+
+    h4 {
+      margin-top: 18px;
+      margin-bottom: 18px;
+
+      a {
+        color: $hotel-white;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .b-time {
+      font-size: 12px;
+      color: $hotel-white;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+.load-more {
+  text-align: center;
+  padding-top: 30px;
+
+  .primary-btn {
+    color: $hotel-black;
+  }
+}
+
+// ============================================================
+// BLOG DETAILS STYLES
+// ============================================================
+
+.blog-details-hero {
+  height: 530px;
+  padding-top: 165px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bd-hero-text {
+  text-align: center;
+
+  span {
+    font-size: 12px;
+    color: $hotel-white;
+    background: $primary;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 2px;
+  }
+
+  h2 {
+    font-size: 44px;
+    color: $hotel-white;
+    line-height: 54px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    list-style: none;
+    font-size: 14px;
+    color: $primary;
+    margin-right: 35px;
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.b-time {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.blog-details-section {
+  padding-top: 55px;
+}
+
+.blog-details-text {
+  .bd-title {
+    margin-bottom: 52px;
+
+    p {
+      font-size: 18px;
+      color: #707079;
+      line-height: 30px;
+    }
+  }
+
+  .bd-pic {
+    overflow: hidden;
+    margin-bottom: 35px;
+
+    .bp-item {
+      width: calc(33.33% - 10px);
+      float: left;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        min-width: 100%;
+      }
+    }
+  }
+
+  .bd-more-text {
+    margin-bottom: 50px;
+
+    .bm-item {
+      margin-bottom: 30px;
+
+      h4 {
+        color: $hotel-black;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #707079;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .tag-share {
+    overflow: hidden;
+    border-top: 1px solid #ebebeb;
+    padding-top: 30px;
+    margin-bottom: 75px;
+
+    .tags {
+      float: left;
+
+      a {
+        font-size: 12px;
+        color: #707079;
+        background: #ebebeb;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 4px 16px;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        margin-right: 6px;
+
+        &:hover {
+          color: $hotel-white;
+          background: $secondary;
+        }
+      }
+    }
+
+    .social-share {
+      float: right;
+
+      span {
+        display: inline-block;
+        font-size: 18px;
+        color: #707079;
+      }
+
+      a {
+        display: inline-block;
+        font-size: 16px;
+        color: #707079;
+        margin-left: 30px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .comment-option {
+    margin-bottom: 75px;
+
+    h4 {
+      color: $hotel-black;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    .single-comment-item {
+      margin-bottom: 30px;
+
+      &.first-comment .sc-text {
+        padding-left: 22px;
+
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1px;
+          height: 255px;
+          background: #ebebeb;
+          content: "";
+        }
+      }
+
+      &.reply-comment {
+        padding-left: 120px;
+        margin-bottom: 52px;
+      }
+
+      &.second-comment .sc-text {
+        padding-left: 22px;
+
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1px;
+          height: 100px;
+          background: #ebebeb;
+          content: "";
+        }
+      }
+
+      .sc-author {
+        float: left;
+        margin-right: 28px;
+
+        img {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+        }
+      }
+
+      .sc-text {
+        display: table;
+        position: relative;
+
+        span {
+          font-size: 12px;
+          color: $primary;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        h5 {
+          font-size: 20px;
+          color: $hotel-black;
+          margin-top: 4px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          color: #707079;
+          margin-bottom: 18px;
+        }
+
+        a {
+          display: inline-block;
+          color: $hotel-black;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 5px 24px;
+          border: 1px solid #F9EEE3;
+          border-radius: 50px;
+          transition: all 0.3s ease;
+          margin-right: 10px;
+
+          &:hover {
+            background: $secondary;
+            color: $hotel-white;
+            border-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  .leave-comment {
+    h4 {
+      color: $hotel-black;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    .comment-form {
+      input,
+      textarea {
+        width: 100%;
+        color: #707079;
+        font-size: 16px;
+        padding-left: 20px;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        font-family: "Cabin", sans-serif;
+
+        &:focus {
+          border-color: $primary;
+          outline: none;
+        }
+      }
+
+      input {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+
+      textarea {
+        height: 116px;
+        padding-top: 12px;
+        margin-bottom: 42px;
+        resize: none;
+      }
+
+      button {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $hotel-white;
+        letter-spacing: 2px;
+        background: $secondary;
+        border: none;
+        padding: 14px 42px 13px;
+        display: inline-block;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: darken($secondary, 10%);
+        }
+      }
+    }
+  }
+}
+
+.recommend-blog-section {
+  padding-top: 65px;
+  padding-bottom: 50px;
+
+  .section-title {
+    margin-bottom: 37px;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'confirmation_of_reservation' => 'Reservation Confirmation',
+    'dear' => 'Dear',
+    'thank_you_reservation' => 'Thank you for your reservation at Hotel Luxury. Your reservation has been confirmed successfully.',
+    'reservation_details' => 'Reservation Details',
+    'reservation_id' => 'Reservation ID:',
+    'name' => 'Name:',
+    'email' => 'Email:',
+    'phone' => 'Phone:',
+    'room_information' => 'Room Information',
+    'room_type' => 'Room Type:',
+    'check_in' => 'Check-in:',
+    'check_out' => 'Check-out:',
+    'nights' => 'Nights:',
+    'guests' => 'Guests:',
+    'cost' => 'Cost',
+    'price_per_night' => 'Price per Night:',
+    'number_of_nights' => 'Number of Nights:',
+    'total' => 'Total:',
+    'special_requests' => 'Special Requests',
+    'questions' => 'If you have any questions or need to make changes to your reservation, please do not hesitate to contact us.',
+    'phone_contact' => 'Phone: +34 123 456 789',
+    'email_contact' => 'Email: info@hotelluxury.com',
+    'waiting_your_arrival' => 'We look forward to your arrival soon. Thank you for choosing Hotel Luxury!',
+];
