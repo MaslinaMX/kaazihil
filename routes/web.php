@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\BlogController;
 
 // Ruta de Inicio
 Route::get('/', [RoomController::class, 'home'])->name('home');
@@ -14,10 +15,13 @@ Route::get('/rooms', [RoomController::class, 'index'])->name('rooms.index');
 Route::get('/booking', [ReservationController::class, 'create'])->name('reservations.create');
 Route::post('/booking', [ReservationController::class, 'store'])->name('reservations.store');
 
+// Rutas de Blog
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+
 // Rutas adicionales del template
 Route::get('/about', function() { return view('about'); })->name('about');
 Route::get('/contact', function() { return view('contact'); })->name('contact');
-Route::get('/blog', function() { return view('blog'); })->name('blog');
 
 // Ruta para cambiar idioma
 Route::get('/locale/{locale}', function ($locale) {

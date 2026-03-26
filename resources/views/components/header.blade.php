@@ -37,8 +37,8 @@
             <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                 <a href="{{ route('about') }}">Nosotros</a>
             </li>
-            <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
-                <a href="{{ route('blog') }}">Blog</a>
+            <li class="{{ request()->routeIs('blog.*') ? 'active' : '' }}">
+                <a href="{{ route('blog.index') }}">Blog</a>
             </li>
             <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
                 <a href="{{ route('contact') }}">Contacto</a>
@@ -119,8 +119,8 @@
                                 <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                                     <a href="{{ route('about') }}">Nosotros</a>
                                 </li>
-                                <li class="{{ request()->routeIs('blog') ? 'active' : '' }}">
-                                    <a href="{{ route('blog') }}">Blog</a>
+                                <li class="{{ request()->routeIs('blog.*') ? 'active' : '' }}">
+                                    <a href="{{ route('blog.index') }}">Blog</a>
                                 </li>
                                 <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
                                     <a href="{{ route('contact') }}">Contacto</a>

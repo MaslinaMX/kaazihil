@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "slug": "que-hacer-playa-del-carmen",
+        "title": "Qué hacer en Playa del Carmen: guía completa para tu estancia",
+        "excerpt": "Descubre todas las actividades y lugares imprescindibles en Playa del Carmen para una estancia memorable.",
+        "category": "Guía de viaje",
+        "date": "2024-04-15",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-1.jpg",
+        "readTime": "8 min"
+    },
+    {
+        "id": 2,
+        "slug": "actividades-acuaticas-riviera-maya",
+        "title": "Las mejores actividades acuáticas en la Riviera Maya",
+        "excerpt": "Explora las mejores opciones para disfrutar del agua: snorkel, buceo, jet ski y mucho más.",
+        "category": "Experiencias",
+        "date": "2024-04-15",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-2.jpg",
+        "readTime": "6 min"
+    },
+    {
+        "id": 3,
+        "slug": "zonas-arqueologicas-playa-del-carmen",
+        "title": "Zonas arqueológicas cerca de Playa del Carmen que debes visitar",
+        "excerpt": "Sumérgete en la historia maya visitando las fascinantes ruinas cercanas a Playa del Carmen.",
+        "category": "Cultura",
+        "date": "2024-04-21",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-3.jpg",
+        "readTime": "10 min"
+    },
+    {
+        "id": 4,
+        "slug": "como-moverse-playa-del-carmen",
+        "title": "Cómo moverse por Playa del Carmen: transporte y consejos útiles",
+        "excerpt": "Guía completa sobre las opciones de transporte disponibles en Playa del Carmen.",
+        "category": "Tips de viaje",
+        "date": "2024-04-22",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-4.jpg",
+        "readTime": "5 min"
+    },
+    {
+        "id": 5,
+        "slug": "cenotes-riviera-maya",
+        "title": "Cenotes en la Riviera Maya: cuáles visitar y cómo llegar",
+        "excerpt": "Descubre los cenotes más hermosos de la región y aprende todo sobre estas maravillas naturales.",
+        "category": "Naturaleza",
+        "date": "2024-04-25",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-5.jpg",
+        "readTime": "7 min"
+    },
+    {
+        "id": 6,
+        "slug": "playa-del-carmen-con-ninos",
+        "title": "Playa del Carmen con niños: planes y actividades para toda la familia",
+        "excerpt": "Planes divertidos y seguros para disfrutar Playa del Carmen junto a tus hijos.",
+        "category": "Familia",
+        "date": "2024-04-28",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-6.jpg",
+        "readTime": "9 min"
+    },
+    {
+        "id": 7,
+        "slug": "donde-comer-playa-del-carmen",
+        "title": "Dónde comer en Playa del Carmen: restaurantes que no te puedes perder",
+        "excerpt": "Une deliciosos sabores locales e internacionales en los mejores restaurantes de la zona.",
+        "category": "Gastronomía",
+        "date": "2024-04-29",
+        "author": "Hotel Kaazihil",
+        "image": "img/blog/blog-7.jpg",
+        "readTime": "6 min"
+    }
+]

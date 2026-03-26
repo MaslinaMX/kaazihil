@@ -11,7 +11,7 @@
 # ============================================================================
 
 # Nombre del proyecto
-PROJECT_NAME="Kaazihil Hotel Management"
+PROJECT_NAME="Káa Zihil Hotel"
 
 # Email para notificaciones
 DEPLOY_EMAIL="admin@tudominio.com"
@@ -24,7 +24,7 @@ DEPLOY_EMAIL="admin@tudominio.com"
 ENVIRONMENT="production"
 
 # URL del proyecto
-PROJECT_URL="https://tudominio.com"
+PROJECT_URL="https://www.kaazihil.com"
 
 # ============================================================================
 # OPCIONES DE DEPLOYMENT
