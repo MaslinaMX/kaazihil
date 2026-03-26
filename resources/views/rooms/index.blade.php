@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Habitaciones - Hotel Kaá Zihil')
+@section('title', 'Habitaciones - Hotel Káa Zihil')
 
 @section('content')
 

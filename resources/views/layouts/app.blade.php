@@ -59,13 +59,17 @@
         <div class="loader"></div>
     </div>
 
-    @include('components.header')
+    @if (!$maintenanceMode)
+        @include('components.header')
+    @endif
 
     <main>
         @yield('content')
     </main>
 
-    @include('components.footer')
+    @if (!$maintenanceMode)
+        @include('components.footer')
+    @endif
 
     <!-- Search model Begin -->
     <div class="search-model">

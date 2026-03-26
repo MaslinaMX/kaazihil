@@ -5,11 +5,11 @@
       content="width=device-width, initial-scale=1.0" />
 
 {{-- Primary SEO --}}
-<title>@yield('title', 'Hotel Kaá Zihil — Playa del Carmen')</title>
+<title>@yield('title', 'Hotel Káa Zihil — Playa del Carmen')</title>
 <meta name="description"
       content="@yield('meta_description', 'Hotel boutique en el corazón de Playa del Carmen. A pasos de la 5ª Avenida, la playa y el muelle a Cozumel. Habitaciones desde $1,000 MXN por noche.')" />
 <meta name="keywords"
-      content="@yield('meta_keywords', 'hotel playa del carmen, hotel centro playa del carmen, hotel boutique quintana roo, Kaá zihil, hotel 5ta avenida, hotel riviera maya')" />
+      content="@yield('meta_keywords', 'hotel playa del carmen, hotel centro playa del carmen, hotel boutique quintana roo, Káa zihil, hotel 5ta avenida, hotel riviera maya')" />
 <meta name="robots"
       content="index, follow" />
 <link rel="canonical"
@@ -19,9 +19,9 @@
 <meta property="og:type"
       content="website" />
 <meta property="og:site_name"
-      content="Hotel Kaá Zihil" />
+      content="Hotel Káa Zihil" />
 <meta property="og:title"
-      content="@yield('og_title', 'Hotel Kaá Zihil — Playa del Carmen')" />
+      content="@yield('og_title', 'Hotel Káa Zihil — Playa del Carmen')" />
 <meta property="og:description"
       content="@yield('og_description', 'Hotel boutique en el corazón de Playa del Carmen. A pasos de la 5ª Avenida, la playa y el muelle a Cozumel.')" />
 <meta property="og:image"
@@ -39,7 +39,7 @@
 <meta name="twitter:card"
       content="summary_large_image" />
 <meta name="twitter:title"
-      content="@yield('og_title', 'Hotel Kaá Zihil — Playa del Carmen')" />
+      content="@yield('og_title', 'Hotel Káa Zihil — Playa del Carmen')" />
 <meta name="twitter:description"
       content="@yield('og_description', 'Hotel boutique en el corazón de Playa del Carmen. A pasos de la 5ª Avenida, la playa y el muelle a Cozumel.')" />
 <meta name="twitter:image"
@@ -50,7 +50,7 @@
     $schema = [
         '@context' => 'https://schema.org',
         '@type' => 'Hotel',
-        'name' => 'Hotel Kaá Zihil',
+        'name' => 'Hotel Káa Zihil',
         'description' => 'Hotel boutique en el corazón de Playa del Carmen, a pasos de la 5ª Avenida, la playa y el muelle a Cozumel.',
         'url' => config('app.url'),
         'telephone' => '+52-984-276-7319',

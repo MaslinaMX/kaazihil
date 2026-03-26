@@ -18,4 +18,9 @@ return [
     'social_media' => 'Follow Us',
     '24_7_service' => '24/7 Customer Service',
     'welcome' => 'Welcome',
+    'en_construccion' => 'Under Maintenance',
+    'pronto_volveremos' => 'We\'ll be back soon',
+    'mantenimiento_mensaje' => 'Sorry, our site is under maintenance. We\'re working to bring you a better experience.',
+    'necesitas_ayuda' => 'Need help?',
+    'contactanos_en' => 'Contact us at',
 ];

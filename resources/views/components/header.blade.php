@@ -14,7 +14,7 @@
         <div class="language-option">
             {{-- <img src="{{ asset('img/flag.jpg') }}"
                  alt="" /> --}}
-            <h3 style="margin-bottom: 30px">Hotel Kaá Zihil</h3>
+            <h3 style="margin-bottom: 30px">Hotel Káa Zihil</h3>
             <span>{{ strtoupper(app()->getLocale()) }} <i class="fa fa-angle-down"></i></span>
             <div class="flag-dropdown">
                 <ul>
@@ -101,8 +101,8 @@
                     <div class="logo">
                         <a href="{{ route('home') }}">
                             {{-- <img src="{{ asset('img/logo.jpeg') }}"
-                                 alt="Hotel Kaá Zihil" /> --}}
-                            <h3 class="mt-2">Hotel Kaá Zihil</h3>
+                                 alt="Hotel Káa Zihil" /> --}}
+                            <h3 class="mt-2">Hotel Káa Zihil</h3>
                         </a>
                     </div>
                 </div>

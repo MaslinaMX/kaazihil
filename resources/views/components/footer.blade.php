@@ -10,7 +10,7 @@
                                 {{-- <img src="{{ asset('img/logo-sb.jpeg') }}"
                                      alt="Kaa Zihil Hotel"
                                      height="100px" /> --}}
-                                <h3 class="text-white">Hotel Kaá Zihil</h3>
+                                <h3 class="text-white">Hotel Káa Zihil</h3>
                             </a>
                         </div>
                         <p>En el corazón de Playa del Carmen,<br />a pasos de la 5ª Avenida y el mar.</p>
@@ -66,7 +66,7 @@
                         <p>Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> Kaá Zihil Hotel. Todos los derechos reservados. By <a href="https://www.instagram.com/maslina.mx/"
+                            </script> Káa Zihil Hotel. Todos los derechos reservados. By <a href="https://www.instagram.com/maslina.mx/"
                                style="color: #aaaab3"
                                target="_blank">Maslina</a>.
                         </p>

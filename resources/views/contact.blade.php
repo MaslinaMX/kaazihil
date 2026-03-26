@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Contacto - Hotel Kaá Zihil')
+@section('title', 'Contacto - Hotel Káa Zihil')
 @section('content')
 
     <!-- Breadcrumb Section Begin -->

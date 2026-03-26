@@ -7,7 +7,7 @@
                         <span>Quiénes somos</span>
                         <h2>Playa del Carmen <br />desde adentro</h2>
                     </div>
-                    <p class="f-para">Kaá Zihil es un hotel pequeño en el mejor punto del centro de Playa del Carmen. No
+                    <p class="f-para">Káa Zihil es un hotel pequeño en el mejor punto del centro de Playa del Carmen. No
                         estamos en las afueras ni detrás de una zona hotelera — estamos donde la ciudad vive, respira y
                         te sorprende cada día.</p>
                     <p class="s-para">La 5ª Avenida, la playa, el muelle a Cozumel y los mejores restaurantes del Caribe

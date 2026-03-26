@@ -25,3 +25,12 @@ Route::get('/locale/{locale}', function ($locale) {
     return redirect()->back();
 })->where('locale', 'es|en')->name('locale.switch');
 
+// Ruta de debugging para verificar el modo mantenimiento
+Route::get('/debug-maintenance', function() {
+    return [
+        'SITE_MAINTENANCE_MODE env' => env('SITE_MAINTENANCE_MODE'),
+        'is true' => env('SITE_MAINTENANCE_MODE') === 'true',
+        'middleware registered' => true,
+    ];
+});
+

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\View\Composers\MaintenanceModeComposer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Pasar la variable de modo mantenimiento a todas las vistas
+        view()->composer('*', MaintenanceModeComposer::class);
     }
 }

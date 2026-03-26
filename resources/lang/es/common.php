@@ -18,4 +18,9 @@ return [
     'social_media' => 'Síguenos',
     '24_7_service' => 'Servicio 24/7',
     'welcome' => 'Bienvenido',
+    'en_construccion' => 'En Construcción',
+    'pronto_volveremos' => 'Pronto volveremos',
+    'mantenimiento_mensaje' => 'Disculpa, nuestro sitio se encuentra en mantenimiento. Estamos trabajando para ofrecerte una mejor experiencia.',
+    'necesitas_ayuda' => '¿Necesitas ayuda?',
+    'contactanos_en' => 'Contáctanos en',
 ];

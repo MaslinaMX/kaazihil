@@ -13,7 +13,7 @@
                 <div class="testimonial-slider owl-carousel">
                     <div class="ts-item">
                         <p>La ubicación es perfecta — a dos minutos de la playa y rodeado de todo. El hotel es sencillo
-                            pero limpio y cómodo, exactamente lo que necesitaba. Sin duda volvería a quedarme en Kaá
+                            pero limpio y cómodo, exactamente lo que necesitaba. Sin duda volvería a quedarme en Káa
                             Zihil.</p>
                         <div class="ti-author">
                             <div class="rating">

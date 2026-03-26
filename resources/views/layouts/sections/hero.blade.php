@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="hero-text">
-                    <h1>Hotel Kaá Zihil</h1>
+                    <h1>Hotel Káa Zihil</h1>
                     <p>En el corazón de Playa del Carmen, donde la 5ª Avenida, el mar turquesa y la mejor gastronomía
                         del Caribe mexicano se encuentran a pasos de tu puerta.</p>
                     <a href="{{ route('rooms.index') }}"
