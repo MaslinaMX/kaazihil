@@ -74,6 +74,9 @@
         @include('components.footer')
     @endif
 
+    <!-- WhatsApp Floating Button -->
+    @include('components.whatsapp-button')
+
     <!-- Search model Begin -->
     <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
