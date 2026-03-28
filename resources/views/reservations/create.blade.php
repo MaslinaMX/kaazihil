@@ -192,7 +192,8 @@
                                    required>
                             <label class="form-check-label"
                                    for="terms">
-                                {{ __('reservations.accept_terms') }} *
+                                <a href="{{ route('condiciones') }}"
+                                   target="_blank">{{ __('reservations.accept_terms') }}</a>*
                             </label>
                             @error('terms')
                                 <div class="invalid-feedback">{{ $message }}</div>

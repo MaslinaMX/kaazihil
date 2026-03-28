@@ -23,6 +23,7 @@ Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/about', function() { return view('about'); })->name('about');
 Route::get('/contact', function() { return view('contact'); })->name('contact');
 Route::get('/gallery', function() { return view('gallery'); })->name('gallery');
+Route::get('/condiciones', function() { return view('tyc'); })->name('condiciones');
 
 // Ruta para cambiar idioma
 Route::get('/locale/{locale}', function ($locale) {

@@ -23,7 +23,7 @@ class ReservationConfirmation extends Mailable
     {
         return new Envelope(
             // to: [new Address('Hotelkaazihil2026@gmail.com', 'Hotel Kaa Zihil')],
-            to: [new Address('rnosdz@gmail.com', 'Hotel Kaa Zihil')],
+            to: [new Address('hotelkaazihil2026@gmail.com', 'Hotel Kaa Zihil')],
             subject: 'Nueva Solicitud de Disponibilidad - Hotel Kaa Zihil',
         );
     }

@@ -56,9 +56,8 @@
             <div class="row">
                 <div class="col-lg-5">
                     <ul>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Términos de uso</a></li>
-                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="{{ route('contact') }}">Contacto</a></li>
+                        <li><a href="{{ route('condiciones') }}">Términos de uso</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-7">
