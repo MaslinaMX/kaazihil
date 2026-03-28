@@ -69,6 +69,14 @@
                         ];
                     }
 
+                    for ($i = 52; $i <= 55; $i++) {
+                        $images[] = [
+                            'src' => asset('img/gallery/kaazihil-' . $i . '.jpeg'),
+                            'categoria' => 'areas',
+                            'texto' => 'Áreas comunes',
+                        ];
+                    }
+
                     shuffle($images);
                 @endphp
 

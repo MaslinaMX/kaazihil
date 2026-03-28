@@ -88,7 +88,7 @@
                     <div class="video-text">
                         <h2>Playa del Carmen desde adentro.</h2>
                         <p>Conoce el hotel, las habitaciones y todo lo que hace único a Káa Zihil</p>
-                        <a href="https://www.youtube.com/watch?v=EzKkl64rRbM"
+                        <a href="{{ asset('img/about/video.mp4') }}"
                            class="play-btn video-popup">
                             <img src="{{ asset('img/play.png') }}"
                                  alt="" />

@@ -34,6 +34,9 @@
             <li class="{{ request()->routeIs('rooms.index') ? 'active' : '' }}">
                 <a href="{{ route('rooms.index') }}">Habitaciones</a>
             </li>
+            <li class="{{ request()->routeIs('gallery') ? 'active' : '' }}">
+                <a href="{{ route('gallery') }}">Galería</a>
+            </li>
             <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                 <a href="{{ route('about') }}">Nosotros</a>
             </li>
