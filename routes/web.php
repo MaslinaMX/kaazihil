@@ -22,6 +22,7 @@ Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 // Rutas adicionales del template
 Route::get('/about', function() { return view('about'); })->name('about');
 Route::get('/contact', function() { return view('contact'); })->name('contact');
+Route::get('/gallery', function() { return view('gallery'); })->name('gallery');
 
 // Ruta para cambiar idioma
 Route::get('/locale/{locale}', function ($locale) {

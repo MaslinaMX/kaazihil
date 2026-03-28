@@ -3,30 +3,6 @@
   Purpose: Mobile, tablet, and responsive breakpoints
 ******************************************************************/
 
-/* ============================================
-   LARGE SCREENS: 1554px - 1920px
-   ============================================ */
-
-@media only screen and (min-width: 1554px) and (max-width: 1920px) {
-    .hp-room-items .hp-room-item .hr-text {
-        bottom: -200px;
-    }
-}
-
-/* ============================================
-   DESKTOP SCREENS: 1200px - 1250px
-   ============================================ */
-
-@media only screen and (min-width: 1200px) and (max-width: 1250px) {
-    .hp-room-items .hp-room-item .hr-text {
-        bottom: -288px;
-    }
-}
-
-/* ============================================
-   LARGE CONTAINER DEFAULT
-   ============================================ */
-
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1170px;

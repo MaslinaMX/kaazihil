@@ -163,6 +163,20 @@
     color: var(--color-white);
 }
 
+.about-page-services .ap-service-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.about-page-services .ap-service-item > * {
+    position: relative;
+    z-index: 2;
+}
+
 /* ============================================
    VIDEO SECTION
    ============================================ */
@@ -170,6 +184,7 @@
 .video-section {
     height: 500px;
     padding-top: 140px;
+    position: relative;
 }
 
 .video-section .video-text {
@@ -190,4 +205,17 @@
 
 .video-section .video-text .play-btn {
     display: inline-block;
+}
+
+.video-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-section .container {
+    position: relative;
+    z-index: 2;
 }

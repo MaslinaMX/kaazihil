@@ -28,129 +28,107 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{ asset('img/room/room-1.jpg') }}"
-                             alt="Luxury Single Room" />
+                        <img src="{{ asset('img/room/room-1.jpeg') }}"
+                             alt="Deluxe Room"
+                             height="280px" />
                         <div class="ri-text">
-                            <h4>Luxury Single Room</h4>
-                            <h3>$1,000<span>/noche</span></h3>
+                            <h4>Deluxe Room</h4>
+                            <h3>Desde $1,000<span>/noche</span></h3>
                             <table>
                                 <tbody>
                                     <tr>
                                         <td class="r-o">Cama:</td>
-                                        <td>Individual</td>
+                                        <td>Queen Size</td>
                                     </tr>
                                     <tr>
                                         <td class="r-o">Capacidad:</td>
-                                        <td>1 persona</td>
+                                        <td>Hasta 2 personas</td>
                                     </tr>
                                     <tr>
                                         <td class="r-o">Clima:</td>
                                         <td>Aire acondicionado</td>
                                     </tr>
                                     <tr>
+                                        <td class="r-o">Amenidades:</td>
+                                        <td>Agua purificada y mineral, Té de selección premium, Servicio de café artesanal matutino, Jabón y champú de lujo</td>
+                                    </tr>
+                                    <tr>
                                         <td class="r-o">Servicios:</td>
                                         <td>WiFi, TV, Baño privado</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <a href="#"
-                               class="primary-btn">Ver detalles</a>
+                               class="primary-btn"
+                               data-gallery-room="deluxe-room">Ver galería</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{ asset('img/room/room-2.jpg') }}"
-                             alt="Doble Deluxe Room" />
+                        <img src="{{ asset('img/room/foto-b2.jpeg') }}"
+                             alt="Deluxe Double Room"
+                             height="280px" />
                         <div class="ri-text">
-                            <h4>Doble Deluxe Room</h4>
-                            <h3>$1,400<span>/noche</span></h3>
+                            <h4>Deluxe Double Room</h4>
+                            <h3>Desde $1,200<span>/noche</span></h3>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="r-o">Cama:</td>
-                                        <td>Doble</td>
-                                    </tr>
-                                    <tr>
                                         <td class="r-o">Capacidad:</td>
-                                        <td>2 personas</td>
+                                        <td>Hasta 4 personas</td>
                                     </tr>
                                     <tr>
-                                        <td class="r-o">Clima:</td>
-                                        <td>Aire acondicionado</td>
+                                        <td class="r-o">Camas:</td>
+                                        <td>2 Camas Queen Size</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="r-o">Amenidades:</td>
+                                        <td>Agua purificada y mineral, Té de selección premium, Servicio de café artesanal matutino, Jabón y champú de lujo</td>
                                     </tr>
                                     <tr>
                                         <td class="r-o">Servicios:</td>
-                                        <td>WiFi, TV, Baño privado</td>
+                                        <td>Secadora, Plancha, Agua caliente/fría</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <a href="#"
-                               class="primary-btn">Ver detalles</a>
+                               class="primary-btn"
+                               data-gallery-room="deluxe-double-room">Ver galería</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{ asset('img/room/room-3.jpg') }}"
-                             alt="Premium King Room" />
-                        <div class="ri-text">
-                            <h4>Premium King Room</h4>
-                            <h3>$1,800<span>/noche</span></h3>
+                        <img src="{{ asset('img/room/rooms-3.jpeg') }}"
+                             alt="Deluxe Suite Jacuzzi" />
+                        <div class="ri-text"
+                             height="300px">
+                            <h4>Deluxe Suite Jacuzzi</h4>
+                            <h3>Desde $2,200<span>/noche</span></h3>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="r-o">Cama:</td>
-                                        <td>King size</td>
-                                    </tr>
-                                    <tr>
                                         <td class="r-o">Capacidad:</td>
-                                        <td>2 personas</td>
+                                        <td>Hasta 2 personas</td>
                                     </tr>
                                     <tr>
-                                        <td class="r-o">Clima:</td>
-                                        <td>Aire acondicionado</td>
+                                        <td class="r-o">Camas:</td>
+                                        <td>Cama Queen Size + Sofá Cama</td>
                                     </tr>
                                     <tr>
-                                        <td class="r-o">Servicios:</td>
-                                        <td>WiFi, TV, Baño privado</td>
+                                        <td class="r-o">Destacado:</td>
+                                        <td>Jacuzzi Privado y Bañera de Lujo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="r-o">Servicios Premium:</td>
+                                        <td>Agua de manantial, Té gourmet, Café recién hecho cada mañana, Artículos de baño franceses</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <a href="#"
-                               class="primary-btn">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="room-item">
-                        <img src="{{ asset('img/room/room-4.jpg') }}"
-                             alt="Suite con Jacuzzi" />
-                        <div class="ri-text">
-                            <h4>Suite con Jacuzzi</h4>
-                            <h3>$2,400<span>/noche</span></h3>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="r-o">Cama:</td>
-                                        <td>King size</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="r-o">Capacidad:</td>
-                                        <td>2 personas</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="r-o">Extra:</td>
-                                        <td>Jacuzzi privado</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="r-o">Servicios:</td>
-                                        <td>WiFi, TV, Baño privado</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a href="#"
-                               class="primary-btn">Ver detalles</a>
+                               class="primary-btn"
+                               data-gallery-room="deluxe-suite-jacuzzi">Ver galería</a>
                         </div>
                     </div>
                 </div>
@@ -158,5 +136,7 @@
         </div>
     </section>
     <!-- Rooms Section End -->
+
+    @include('components.rooms-gallery')
 
 @endsection

@@ -52,6 +52,9 @@
     <link rel="stylesheet"
           href="{{ asset('css/11-blog-details.css') }}"
           type="text/css">
+    <link rel="stylesheet"
+          href="{{ asset('css/12-room-gallery.css') }}"
+          type="text/css">
 
     @yield('extra_css')
 </head>

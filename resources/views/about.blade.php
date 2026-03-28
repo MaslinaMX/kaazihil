@@ -53,7 +53,7 @@
                         <div class="ap-service-item set-bg"
                              data-setbg="{{ asset('img/about/about-p1.jpg') }}">
                             <div class="api-text">
-                                <h3>Gastronomía a tu puerta</h3>
+                                <h3>Conecta con la naturaleza</h3>
                             </div>
                         </div>
                     </div>
