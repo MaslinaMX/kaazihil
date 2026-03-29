@@ -10,10 +10,10 @@
     {{-- <div class="search-icon search-switch">
         <i class="icon_search"></i>
     </div> --}}
-    <div class="header-configure-area">
-        <div class="language-option">
-            {{-- <img src="{{ asset('img/flag.jpg') }}"
-                 alt="" /> --}}
+    <div class="header-configure-area d-flex flex-column align-items-center">
+        {{-- <div class="language-option">
+            <img src="{{ asset('img/flag.jpg') }}"
+                 alt="Logo Kaa Zihil" />
             <h3 style="margin-bottom: 30px">Hotel Káa Zihil</h3>
             <span>{{ strtoupper(app()->getLocale()) }} <i class="fa fa-angle-down"></i></span>
             <div class="flag-dropdown">
@@ -22,7 +22,7 @@
                     <li><a href="{{ route('locale.switch', 'en') }}">EN</a></li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
         <a href="{{ route('reservations.create') }}"
            class="bk-btn">Reservar</a>
     </div>
@@ -50,10 +50,11 @@
     </nav>
     <div id="mobile-menu-wrap"></div>
     <div class="top-social">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61552418843831"
+           target=_blank><i class="fa fa-facebook"></i></a>
+        {{-- <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-tripadvisor"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a> --}}
     </div>
     <ul class="top-widget">
         <li><i class="fa fa-phone"></i><a href="tel:+5219842767319">(+52) 1 984 276 7319</a></li>
@@ -76,14 +77,15 @@
                 <div class="col-lg-6">
                     <div class="tn-right">
                         <div class="top-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61552418843831"
+                               target=_blank><i class="fa fa-facebook"></i></a>
+                            {{-- <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a> --}}
                         </div>
                         <a href="{{ route('reservations.create') }}"
                            class="bk-btn">Reservar</a>
-                        <div class="language-option">
+                        {{-- <div class="language-option">
                             <span>{{ strtoupper(app()->getLocale()) }} <i class="fa fa-angle-down"></i></span>
                             <div class="flag-dropdown">
                                 <ul>
@@ -91,7 +93,7 @@
                                     <li><a href="{{ route('locale.switch', 'en') }}">EN</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -103,9 +105,9 @@
                 <div class="col-lg-2">
                     <div class="logo">
                         <a href="{{ route('home') }}">
-                            {{-- <img src="{{ asset('img/logo.jpeg') }}"
-                                 alt="Hotel Káa Zihil" /> --}}
-                            <h3 class="mt-2">Hotel Káa Zihil</h3>
+                            <img src="{{ asset('img/logo.jpeg') }}"
+                                 alt="Hotel Káa Zihil" />
+                            {{-- <h3 class="mt-2">Hotel Káa Zihil</h3> --}}
                         </a>
                     </div>
                 </div>

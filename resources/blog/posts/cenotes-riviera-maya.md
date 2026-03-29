@@ -1,5 +1,3 @@
-# Cenotes en la Riviera Maya: cuáles visitar y cómo llegar
-
 Los cenotes son formaciones geológicas únicas de México: sumideros de agua dulce con una belleza y misticismo cautivadores. Son ideales para nadar, bucear y explorar.
 
 ## ¿Qué es un cenote?

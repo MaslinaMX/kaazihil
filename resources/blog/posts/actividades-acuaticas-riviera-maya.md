@@ -1,5 +1,3 @@
-# Las mejores actividades acuáticas en la Riviera Maya
-
 La Riviera Maya es un paraíso para los amantes de los deportes acuáticos y las aventuras en el agua.
 
 ## Snorkel y buceo

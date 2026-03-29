@@ -1,5 +1,3 @@
-# Playa del Carmen con niños: planes y actividades para toda la familia
-
 Playa del Carmen es un destino perfecto para familias. Aquí encontrarás playas seguras, parques temáticos y actividades emocionantes para niños de todas las edades.
 
 ## Parques temáticos seguros y divertidos

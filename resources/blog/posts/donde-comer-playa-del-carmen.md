@@ -1,5 +1,3 @@
-# Dónde comer en Playa del Carmen: restaurantes que no te puedes perder
-
 Playa del Carmen es un paraíso culinario donde se funden sabores locales, internacionales y de alta cocina. Desde tacos de calle hasta restaurantes Michelin, aquí encontrarás opciones para todos.
 
 ## Comida Mexicana Auténtica

@@ -1,5 +1,3 @@
-# Cómo moverse por Playa del Carmen: transporte y consejos útiles
-
 Una pregunta común entre los visitantes: **¿Cómo me desplazo en Playa del Carmen?** Aquí te mostramos todas las opciones.
 
 ## A pie

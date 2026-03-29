@@ -1,5 +1,3 @@
-# Zonas arqueológicas cerca de Playa del Carmen que debes visitar
-
 La región de la Riviera Maya es cuna de la civilización maya. Descubre sus fascinantes ruinas a pocos kilómetros de Playa del Carmen.
 
 ## Tulum: La joya de la riviera

@@ -90,9 +90,10 @@
                                 <h5>{{ $post['author'] ?? 'Hotel Kaazihil' }}</h5>
                                 <p>Somos un hotel boutique dedicado a compartir las mejores experiencias viajeras en Playa del Carmen y la Riviera Maya. Nuestro equipo de expertos te ayuda a planificar tu viaje perfecto.</p>
                                 <div class="author-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61552418843831"
+                                       target=_blank><i class="fa fa-facebook"></i></a>
+                                    {{-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a> --}}
                                 </div>
                             </div>
                         </div>

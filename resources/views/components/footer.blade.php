@@ -7,19 +7,20 @@
                     <div class="ft-about">
                         <div class="logo">
                             <a href="{{ route('home') }}">
-                                {{-- <img src="{{ asset('img/logo-sb.jpeg') }}"
+                                <img src="{{ asset('img/logo.jpeg') }}"
                                      alt="Kaa Zihil Hotel"
-                                     height="100px" /> --}}
-                                <h3 class="text-white">Hotel Káa Zihil</h3>
+                                     height="100px" />
+                                {{-- <h3 class="text-white">Hotel Káa Zihil</h3> --}}
                             </a>
                         </div>
                         <p>En el corazón de Playa del Carmen,<br />a pasos de la 5ª Avenida y el mar.</p>
                         <div class="fa-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61552418843831"
+                               target=_blank><i class="fa fa-facebook"></i></a>
+                            {{-- <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-tripadvisor"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a> --}}
                         </div>
                     </div>
                 </div>

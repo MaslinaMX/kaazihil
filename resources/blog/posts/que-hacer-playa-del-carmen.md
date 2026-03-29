@@ -1,5 +1,3 @@
-# Qué hacer en Playa del Carmen: guía completa para tu estancia
-
 Playa del Carmen es uno de los destinos más vibrantes de la Riviera Maya, ofreciendo una combinación perfecta de playas hermosas, acción, cultura y gastronomía.
 
 ## La famosa Quinta Avenida
