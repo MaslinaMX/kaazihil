@@ -58,7 +58,7 @@
     </div>
     <ul class="top-widget">
         <li><i class="fa fa-phone"></i><a href="tel:+5219842767319">(+52) 1 984 276 7319</a></li>
-        <li><i class="fa fa-envelope"></i><a href="mailto:hotelkaaziihiil@gmail.com">hotelkaaziihiil@gmail.com</a></li>
+        <li><i class="fa fa-envelope"></i><a href="mailto:hotelkaazihil2026@gmail.com">hotelkaazihil2026@gmail.com</a></li>
     </ul>
 </div>
 <!-- Offcanvas Menu Section End -->
@@ -71,7 +71,7 @@
                 <div class="col-lg-6">
                     <ul class="tn-left">
                         <li><i class="fa fa-phone"></i><a href="tel:+5219842767319">(+52) 1 984 276 7319</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:hotelkaaziihiil@gmail.com">hotelkaaziihiil@gmail.com</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:hotelkaazihil2026@gmail.com">hotelkaazihil2026@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6">

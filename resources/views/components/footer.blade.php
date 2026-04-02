@@ -31,7 +31,7 @@
                             <li><a style="color: #aaaab3"
                                    href="tel:+5219842767319">(+52) 1 984 276 7319</a></li>
                             <li><a style="color: #aaaab3"
-                                   href="mailto:hotelkaaziihiil@gmail.com">hotelkaaziihiil@gmail.com</a></li>
+                                   href="mailto:hotelkaazihil2026@gmail.com">hotelkaazihil2026@gmail.com</a></li>
                             <li>Calle 1 Sur Bis entre Av. 5 y 10, Centro, 77710, Playa del Carmen, Quintana Roo, México
                             </li>
                         </ul>
