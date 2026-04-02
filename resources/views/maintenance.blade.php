@@ -89,9 +89,9 @@
             <div class="maintenance-contact">
                 <p>¿Necesitas ayuda? Contáctanos:</p>
                 <p>
-                    <a href="mailto:hotelkaazihil2026@gmail.com"
+                    <a href="mailto:hotelkaaziihiil@gmail.com"
                        class="maintenance-email">
-                        hotelkaazihil2026@gmail.com
+                        hotelkaaziihiil@gmail.com
                     </a>
                 </p>
                 <p>

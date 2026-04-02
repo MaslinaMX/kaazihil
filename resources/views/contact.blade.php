@@ -44,7 +44,7 @@
                                 </tr>
                                 <tr>
                                     <td class="c-o">Email:</td>
-                                    <td><a href="mailto:hotelkaazihil2026@gmail.com">hotelkaazihil2026@gmail.com</a></td>
+                                    <td><a href="mailto:hotelkaaziihiil@gmail.com">hotelkaaziihiil@gmail.com</a></td>
                                 </tr>
                             </tbody>
                         </table>

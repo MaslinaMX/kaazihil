@@ -54,7 +54,7 @@
         'description' => 'Hotel boutique en el corazón de Playa del Carmen, a pasos de la 5ª Avenida, la playa y el muelle a Cozumel.',
         'url' => config('app.url'),
         'telephone' => '+52-984-276-7319',
-        'email' => 'hotelkaazihil2026@gmail.com',
+        'email' => 'hotelkaaziihiil@gmail.com',
         'address' => [
             '@type' => 'PostalAddress',
             'streetAddress' => 'Calle 1 Sur Bis entre Av. 5 y 10',
