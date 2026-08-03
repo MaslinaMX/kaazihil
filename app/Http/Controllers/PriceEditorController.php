@@ -39,7 +39,7 @@ class PriceEditorController extends Controller
         $prices['deluxe_suite_jacuzzi'] = (int) $validated['deluxe_suite_jacuzzi'];
 
         File::put(
-            resource_path('data/room-prices.json'),
+            storage_path('app/room-prices.json'),
             json_encode($prices, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . PHP_EOL
         );
 
@@ -54,7 +54,9 @@ class PriceEditorController extends Controller
             'deluxe_suite_jacuzzi' => 2200,
         ];
 
-        $path = resource_path('data/room-prices.json');
+        $storagePath = storage_path('app/room-prices.json');
+        $sourcePath = resource_path('data/room-prices.json');
+        $path = File::exists($storagePath) ? $storagePath : $sourcePath;
 
         if (! File::exists($path)) {
             return $defaults;

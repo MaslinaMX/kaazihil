@@ -1,5 +1,9 @@
 @php
-    $roomPriceFile = resource_path('data/room-prices.json');
+    $roomPriceFile = storage_path('app/room-prices.json');
+    if (!file_exists($roomPriceFile)) {
+        $roomPriceFile = resource_path('data/room-prices.json');
+    }
+
     $roomPrices = json_decode(file_exists($roomPriceFile) ? file_get_contents($roomPriceFile) : '{}', true) ?: [];
     $roomPrices = array_merge(
         [

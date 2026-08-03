@@ -13,7 +13,7 @@ class PriceEditorTest extends TestCase
     {
         parent::setUp();
 
-        $this->pricesPath = base_path('resources/data/room-prices.json');
+        $this->pricesPath = storage_path('app/room-prices.json');
     }
 
     public function test_edit_prices_requires_the_hardcoded_password(): void
@@ -26,7 +26,7 @@ class PriceEditorTest extends TestCase
 
     public function test_edit_prices_updates_the_json_file_when_password_is_correct(): void
     {
-        $original = File::get($this->pricesPath);
+        $original = File::exists($this->pricesPath) ? File::get($this->pricesPath) : null;
 
         try {
             $response = $this->post('/edit-prices', [
@@ -39,13 +39,19 @@ class PriceEditorTest extends TestCase
             $response->assertRedirect('/edit-prices');
             $response->assertSessionHas('success');
 
+            $this->assertFileExists($this->pricesPath);
+
             $prices = json_decode(File::get($this->pricesPath), true);
 
             $this->assertSame(1500, $prices['deluxe_room']);
             $this->assertSame(1700, $prices['deluxe_double_room']);
             $this->assertSame(2500, $prices['deluxe_suite_jacuzzi']);
         } finally {
-            File::put($this->pricesPath, $original);
+            if ($original !== null) {
+                File::put($this->pricesPath, $original);
+            } else {
+                File::delete($this->pricesPath);
+            }
         }
     }
 }
