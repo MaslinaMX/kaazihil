@@ -1,3 +1,16 @@
+@php
+    $roomPriceFile = resource_path('data/room-prices.json');
+    $roomPrices = json_decode(file_exists($roomPriceFile) ? file_get_contents($roomPriceFile) : '{}', true) ?: [];
+    $roomPrices = array_merge(
+        [
+            'deluxe_room' => 1000,
+            'deluxe_double_room' => 1200,
+            'deluxe_suite_jacuzzi' => 2200,
+        ],
+        $roomPrices,
+    );
+@endphp
+
 @extends('layouts.app')
 
 @section('title', 'Habitaciones - Hotel Káa Zihil')
@@ -33,7 +46,7 @@
                              height="280px" />
                         <div class="ri-text">
                             <h4>Deluxe Room</h4>
-                            <h3>Desde $1,000<span>/noche</span></h3>
+                            <h3>Desde ${{ number_format($roomPrices['deluxe_room'], 0, ',', '.') }}<span>/noche</span></h3>
                             <table>
                                 <tbody>
                                     <tr>
@@ -71,7 +84,7 @@
                              height="280px" />
                         <div class="ri-text">
                             <h4>Deluxe Double Room</h4>
-                            <h3>Desde $1,200<span>/noche</span></h3>
+                            <h3>Desde ${{ number_format($roomPrices['deluxe_double_room'], 0, ',', '.') }}<span>/noche</span></h3>
                             <table>
                                 <tbody>
                                     <tr>
@@ -105,7 +118,7 @@
                         <div class="ri-text"
                              height="300px">
                             <h4>Deluxe Suite Jacuzzi</h4>
-                            <h3>Desde $2,200<span>/noche</span></h3>
+                            <h3>Desde ${{ number_format($roomPrices['deluxe_suite_jacuzzi'], 0, ',', '.') }}<span>/noche</span></h3>
                             <table>
                                 <tbody>
                                     <tr>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PriceEditorController;
 
 // Ruta de Inicio
 Route::get('/', [RoomController::class, 'home'])->name('home');
@@ -30,6 +31,10 @@ Route::get('/locale/{locale}', function ($locale) {
     session(['locale' => $locale]);
     return redirect()->back();
 })->where('locale', 'es|en')->name('locale.switch');
+
+// Ruta protegida para editar precios
+Route::get('/edit-prices', [PriceEditorController::class, 'index'])->name('edit-prices.index');
+Route::post('/edit-prices', [PriceEditorController::class, 'update'])->name('edit-prices.update');
 
 // Ruta de debugging para verificar el modo mantenimiento
 Route::get('/debug-maintenance', function() {
