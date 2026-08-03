@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -8,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ReservationConfirmation extends Mailable
+class GuestReservationConfirmation extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -22,15 +23,15 @@ class ReservationConfirmation extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            to: [new Address('hotelkaazihil2026@gmail.com', 'Hotel Kaa Zihil')],
-            subject: 'Nueva Solicitud de Disponibilidad - Hotel Kaa Zihil',
+            to: [new Address($this->reservationData['email'], $this->reservationData['first_name'] . ' ' . $this->reservationData['last_name'])],
+            subject: 'Solicitud recibida - Hotel Kaa Zihil',
         );
     }
 
     public function content(): Content
     {
         return new Content(
-            view: 'emails.reservation-confirmation',
+            view: 'emails.guest-reservation-confirmation',
             with: [
                 'reservation' => $this->reservationData,
             ],

@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
 use App\Mail\ReservationConfirmation;
+use App\Mail\GuestReservationConfirmation;
 
 class ReservationController extends Controller
 {
@@ -56,6 +57,7 @@ public function create(Request $request)
 
         try {
             Mail::send(new ReservationConfirmation($reservationData));
+            Mail::send(new GuestReservationConfirmation($reservationData));
         } catch (\Exception $e) {
             Log::error('Error al enviar solicitud de disponibilidad: ' . $e->getMessage());
             return redirect()
