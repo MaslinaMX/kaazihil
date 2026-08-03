@@ -36,7 +36,7 @@ class PriceEditorTest extends TestCase
                 'deluxe_suite_jacuzzi' => 2500,
             ]);
 
-            $response->assertRedirect('/');
+            $response->assertRedirect('/edit-prices');
             $response->assertSessionHas('success');
 
             $prices = json_decode(File::get($this->pricesPath), true);

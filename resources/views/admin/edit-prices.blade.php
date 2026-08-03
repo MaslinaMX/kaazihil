@@ -38,6 +38,14 @@
             cursor: pointer;
         }
 
+        .footer-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: #13662e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         .error {
             color: #b00020;
             margin-bottom: 12px;
@@ -46,6 +54,15 @@
         .success {
             color: #0b6b2d;
             margin-bottom: 12px;
+        }
+
+        .footer {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
         }
     </style>
 </head>
@@ -95,6 +112,13 @@
 
             <button type="submit">Guardar cambios</button>
         </form>
+
+        <a class="footer-link"
+           href="{{ route('home') }}">Volver a inicio</a>
+
+        <div class="footer">
+            Contactar a Maslina: <strong>2713164997</strong>
+        </div>
     </div>
 </body>
 
